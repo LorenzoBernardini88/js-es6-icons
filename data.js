@@ -127,3 +127,7 @@ for(i=0; i<icons.length; i++){
 } //inietto nel dom box_icon tramitre ciclo for.
 
 const select = document.getElementById('select_option').value;//recupero select_option.
+
+
+
+
