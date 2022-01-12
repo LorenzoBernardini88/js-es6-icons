@@ -116,18 +116,45 @@ const icons = [
 const iconCont = document.querySelector('.icon_container');//recupero div.icon_container.
 
 function creaBox (family,prefix,name,color){
+
 	iconCont.innerHTML += `<div class="box_icon">
 	<i class="${family} ${prefix}${name} " style= "color: ${color}" ></i>
 	<span>${name}</span>
 	</div>`;
 } //funzione che crea il box_icon.
 
-for(i=0; i<icons.length; i++){
-	creaBox(icons[i].family,icons[i].prefix,icons[i].name,icons[i].color);
-} //inietto nel dom box_icon tramitre ciclo for.
+let select = document.getElementById('select_option');//recupero select_option.
 
-const select = document.getElementById('select_option').value;//recupero select_option.
+function creaIcone( arrayIcone )
+{
+	for(i=0; i<arrayIcone.length; i++){
+		creaBox(arrayIcone[i].family,arrayIcone[i].prefix,arrayIcone[i].name,arrayIcone[i].color);
+	} //
+
+}
+//Stampo tutte le icone
+creaIcone (icons);
+
+select.addEventListener('change', function(){
+
+	const valore =this.value   
+	const nuovoArray = [];
+
+	if(valore == 'all'){
+		creaIcone (icons);
+	}else if(valore == 'animal'){
+		iconCont.innerHTML = '';
+		let iconType = icons.filter(function(animali){
+			return (animali.type === "animal")
+		});
+
+		creaIcone(iconType);
+	}
+
+	//faccio cose per filtrare l'array
+	creaIcone( nuovoArray )
 
 
 
+})
 
