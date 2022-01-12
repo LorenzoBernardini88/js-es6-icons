@@ -140,21 +140,32 @@ select.addEventListener('change', function(){
 	const valore =this.value   
 	const nuovoArray = [];
 
-	if(valore == 'all'){
-		creaIcone (icons);
-	}else if(valore == 'animal'){
-		iconCont.innerHTML = '';
-		let iconType = icons.filter(function(animali){
-			return (animali.type === "animal")
-		});
+	
+		
+		const iconType = icons.filter((valore) =>{
+			
+		
+			return valore = icons.type;
 
-		creaIcone(iconType);
-	}
+			
+		});	
+		nuovoArray.push(iconType);
+		creaIcone(nuovoArray);
+		
+	
+
+		
+	
 
 	//faccio cose per filtrare l'array
-	creaIcone( nuovoArray )
+	
 
 
 
 })
 
+// else if(valore == 'animal'){
+// 	iconCont.innerHTML = '';
+// 	let iconType = icons.filter(function(animali){
+// 		return (animali.type === "animal")
+// 	});
