@@ -1,4 +1,4 @@
-[
+const icons = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,15 @@
 		color: 'blue'
 	}
 ];
+
+const iconCont = document.querySelector('.icon_container');//recupero div.icon_container.
+
+function creaBox (){
+	iconCont.innerHTML += `<div class="box_icon"></div>`;
+} //funzione che crea il box_icon.
+
+for(i=0; i<icons.length; i++){
+	creaBox();
+} //inietto nel dom box_icon tramitre ciclo for.
+
+
