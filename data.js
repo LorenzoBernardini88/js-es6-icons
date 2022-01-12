@@ -126,4 +126,4 @@ for(i=0; i<icons.length; i++){
 	creaBox(icons[i].family,icons[i].prefix,icons[i].name,icons[i].color);
 } //inietto nel dom box_icon tramitre ciclo for.
 
-
+const select = document.getElementById('select_option').value;//recupero select_option.
