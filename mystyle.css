@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HEADER */
+h1{
+    padding: 10px 5px;
+    color:#29B1DD;
+}
+.select_container{
+    padding: 20px;
+    background-color:#29B1DD;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN */
+main{
+    background-color: lightgray;
+}
+.icon_container{
+    padding: 20px 0px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box_icon{
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
