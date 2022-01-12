@@ -115,12 +115,15 @@ const icons = [
 
 const iconCont = document.querySelector('.icon_container');//recupero div.icon_container.
 
-function creaBox (family,prefix,name){
-	iconCont.innerHTML += `<div class="box_icon"><i class="${family} ${prefix}${name} "></i></div>`;
+function creaBox (family,prefix,name,color){
+	iconCont.innerHTML += `<div class="box_icon">
+	<i class="${family} ${prefix}${name} " style= "color: ${color}" ></i>
+	<span>${name}</span>
+	</div>`;
 } //funzione che crea il box_icon.
 
 for(i=0; i<icons.length; i++){
-	creaBox(icons[i].family,icons[i].prefix,icons[i].name);
+	creaBox(icons[i].family,icons[i].prefix,icons[i].name,icons[i].color);
 } //inietto nel dom box_icon tramitre ciclo for.
 
 

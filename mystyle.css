@@ -47,7 +47,11 @@ main{
     border-radius: 5px;
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 3px 3px 3px black;
+}
+.fas{
+    font-size: 30px;
 }
