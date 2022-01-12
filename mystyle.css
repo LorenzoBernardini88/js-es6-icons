@@ -3,10 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
 /* HEADER */
 h1{
     padding: 10px 5px;
     color:#29B1DD;
+}
+span{
+    margin-right: 5px;
 }
 .select_container{
     padding: 20px;
