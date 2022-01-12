@@ -6,18 +6,19 @@
 body{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 /* HEADER */
 h1{
-    padding: 10px 5px;
+    padding: 3px 5px;
     color:#29B1DD;
 }
 span{
     margin-right: 5px;
 }
 .select_container{
-    padding: 20px;
+    padding: 10px;
     background-color:#29B1DD;
     color: white;
     display: flex;
@@ -27,10 +28,11 @@ span{
 
 /* MAIN */
 main{
+    height: 100vh;
     background-color: lightgray;
 }
 .icon_container{
-    padding: 20px 0px;
+    padding: 5px 0px;
     width: 90%;
     margin: 0 auto;
     display: flex;
