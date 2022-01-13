@@ -136,36 +136,23 @@ function creaIcone( arrayIcone )
 creaIcone (icons);
 
 select.addEventListener('change', function(){
+		iconCont.innerHTML = '';
+		let iconType;
+		//se this.value == 'all', iconType = tutte
 
-	const valore =this.value   
-	const nuovoArray = [];
-
+		//altrimenti iconType = icons-filter
+		if(this.value == 'all'){
+			iconType = icons;
+		}else{
+				iconType = icons.filter((tipo) =>{
+				if(tipo.type == this.value ){
+					return true
+					}
+				});	
+		}
 	
 		
-		const iconType = icons.filter((valore) =>{
-			
+		creaIcone(iconType);
 		
-			return valore = icons.type;
-
-			
-		});	
-		nuovoArray.push(iconType);
-		creaIcone(nuovoArray);
-		
-	
-
-		
-	
-
-	//faccio cose per filtrare l'array
-	
-
-
-
 })
 
-// else if(valore == 'animal'){
-// 	iconCont.innerHTML = '';
-// 	let iconType = icons.filter(function(animali){
-// 		return (animali.type === "animal")
-// 	});
